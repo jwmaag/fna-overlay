@@ -1,0 +1,5 @@
+lib/steamworks-nosteam/Steamworks.NET.dll
+lib/steamworks-nosteam/libSteamworksNative.so.0.0
+lib/steamworks-nosteam/libcestub.so.0.0
+lib/steamworks-nosteam/libsteamwrapper.so.0.0
+lib/steamworks-nosteam/steam.hdll

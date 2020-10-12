@@ -1,0 +1,12 @@
+bin/hl
+include/hl.h
+include/hlc.h
+include/hlc_main.c
+lib/fmt.hdll
+lib/libhl.so
+lib/mysql.hdll
+lib/openal.hdll
+lib/sdl.hdll
+lib/ssl.hdll
+lib/ui.hdll
+lib/uv.hdll

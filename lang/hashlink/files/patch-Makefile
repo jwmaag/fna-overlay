@@ -1,0 +1,20 @@
+--- Makefile.orig	2020-03-30 12:22:50 UTC
++++ Makefile
+@@ -6,7 +6,7 @@ INSTALL_DIR ?= $(PREFIX)
+ 
+ LIBS=fmt sdl ssl openal ui uv mysql
+ 
+-CFLAGS = -Wall -O3 -I src -msse2 -mfpmath=sse -std=c11 -I include/pcre -I include/mikktspace -I include/minimp3 -D LIBHL_EXPORTS
++CFLAGS+= -Wall -O3 -I src -msse2 -mfpmath=sse -std=c11 -I include/pcre -I include/mikktspace -I include/minimp3 -D LIBHL_EXPORTS
+ LFLAGS = -L. -lhl
+ LIBFLAGS =
+ HLFLAGS = -ldl
+@@ -123,7 +123,7 @@ uninstall:
+ libs: $(LIBS)
+ 
+ libhl: ${LIB}
+-	${CC} -o libhl.$(LIBEXT) -m${MARCH} ${LIBFLAGS} -shared ${LIB} -lpthread -lm
++	${CC} -o libhl.$(LIBEXT) -m${MARCH} ${LIBFLAGS} -shared -Wl,soname,libhl.so.0 ${LIB} -lpthread -lm
+ 
+ hlc: ${BOOT}
+ 	${CC} ${CFLAGS} -o hlc ${BOOT} ${LFLAGS}

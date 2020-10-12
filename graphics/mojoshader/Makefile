@@ -1,7 +1,7 @@
-
 PORTNAME=        mojoshader
 PORTVERSION=     1305         # changeset
 CATEGORIES=      graphics
+MAINTAINER=      jwmaag@gmail.com
 LICENSE=         ZLIB
 
 USE_GITHUB=      yes
@@ -12,7 +12,7 @@ GH_TAGNAME=      10bbf0e
 BUILD_DEPENDS=   re2c:devel/re2c \
 	${LOCALBASE}/include/vulkan/vulkan.h:devel/vulkan-headers
 
-USES=            cmake sdl
+USES=            cmake sdl ninja
 USE_SDL=         sdl2
 
 CMAKE_ARGS=      -DBUILD_SHARED_LIBS=ON \
@@ -20,7 +20,6 @@ CMAKE_ARGS=      -DBUILD_SHARED_LIBS=ON \
 				 -DFLIP_VIEWPORT=ON
 
 CFLAGS+=         -I${LOCALBASE}/include
-
 
 do-install:
 	${CP} ${WRKSRC}/mojoshader*.h ${STAGEDIR}${PREFIX}/include/
