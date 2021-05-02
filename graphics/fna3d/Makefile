@@ -1,15 +1,17 @@
 PORTNAME=        fna3d
-DISTVERSION=     20.10
+DISTVERSION=     21.05
 CATEGORIES=      graphics
 LICENSE=         ZLIB
 
 USE_GITHUB=      yes
 GH_ACCOUNT=      FNA-XNA
 GH_PROJECT=      FNA3D
-GH_TUPLE=        FNA-XNA:MojoShader:07ce8799af:MojoShader/MojoShader
+GH_TUPLE=        FNA-XNA:MojoShader:c9037d90:MojoShader/MojoShader
 
 USES=            cmake sdl
 USE_SDL=         sdl2
+
+BUILD_DEPENDS=   ${LOCALBASE}/include/vulkan/vulkan.h:graphics/vulkan-headers
 
 CFLAGS+=         -I${LOCALBASE}/include
 

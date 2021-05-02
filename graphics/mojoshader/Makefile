@@ -1,5 +1,5 @@
 PORTNAME=        mojoshader
-PORTVERSION=     1305         # changeset
+PORTVERSION=     1321         # changeset
 CATEGORIES=      graphics
 MAINTAINER=      jwmaag@gmail.com
 LICENSE=         ZLIB
@@ -7,10 +7,10 @@ LICENSE=         ZLIB
 USE_GITHUB=      yes
 GH_ACCOUNT=      FNA-XNA
 GH_PROJECT=      MojoShader
-GH_TAGNAME=      10bbf0e
+GH_TAGNAME=      c9037d90
 
 BUILD_DEPENDS=   re2c:devel/re2c \
-	${LOCALBASE}/include/vulkan/vulkan.h:devel/vulkan-headers
+	${LOCALBASE}/include/vulkan/vulkan.h:graphics/vulkan-headers
 
 USES=            cmake sdl ninja
 USE_SDL=         sdl2

@@ -1,5 +1,5 @@
 PORTNAME=        libtheorafile
-PORTVERSION=     1.0
+PORTVERSION=     1.0.1
 MAINTAINER=      jwmaag@gmail.com
 CATEGORIES=      multimedia
 LICENSE=         ZLIB
@@ -7,7 +7,7 @@ LICENSE=         ZLIB
 USE_GITHUB=      yes
 GH_ACCOUNT=      FNA-XNA
 GH_PROJECT=      Theorafile
-GH_TAGNAME=      cb1f33310
+GH_TAGNAME=      3f8bd6c
 
 LIB_DEPENDS=     libogg.so:audio/libogg \
 	libvorbis.so:audio/libvorbis \
