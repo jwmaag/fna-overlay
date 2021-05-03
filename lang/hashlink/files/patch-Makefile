@@ -14,7 +14,7 @@
  
  libhl: ${LIB}
 -	${CC} -o libhl.$(LIBEXT) -m${MARCH} ${LIBFLAGS} -shared ${LIB} -lpthread -lm
-+	${CC} -o libhl.$(LIBEXT) -m${MARCH} ${LIBFLAGS} -shared -Wl,soname,libhl.so.0 ${LIB} -lpthread -lm
++	${CC} -o libhl.$(LIBEXT) -m${MARCH} ${LIBFLAGS} -shared -Wl,-soname,libhl.so.0 ${LIB} -lpthread -lm
  
  hlc: ${BOOT}
  	${CC} ${CFLAGS} -o hlc ${BOOT} ${LFLAGS}

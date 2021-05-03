@@ -16,8 +16,9 @@ LIB_DEPENDS=     libpng16.so:graphics/png \
 	libmbedcrypto.so:security/mbedtls \
 	libuv.so:devel/libuv
 
-USES=            gmake sdl openal
+USES=            gmake sdl openal gl
 USE_SDL=         sdl2
+USE_GL=			 glu
 
 CFLAGS+=         -I${LOCALBASE}/include
 MAKE_ARGS=        LIBFLAGS="-L${LOCALBASE}/lib" INSTALL_DIR=${STAGEDIR}${PREFIX}
