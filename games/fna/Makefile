@@ -32,6 +32,6 @@ do-install:
 	${CP} ${BUILD_WRKSRC}/bin/Release/FNA.dll.config ${STAGEDIR}${PREFIX}/share/FNA/
 
 PLIST_FILES=     share/FNA/FNA.dll \
-				 share/FNA/FNA.dll.config
+                 share/FNA/FNA.dll.config
 
 .include <bsd.port.mk>
