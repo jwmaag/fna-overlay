@@ -24,7 +24,7 @@ post-install:
 	${RLN} ${STAGEDIR}${PREFIX}/lib/libFNA3D.so.0.${DISTVERSION} ${STAGEDIR}${PREFIX}/lib/libFNA3D.so.0
 
 PLIST_FILES=     lib/libFNA3D.so.0.${DISTVERSION} \
-                 lib/libFNA3D.so.0
+                 lib/libFNA3D.so.0 \
                  lib/libFNA3D.so
 
 .include <bsd.port.mk>
