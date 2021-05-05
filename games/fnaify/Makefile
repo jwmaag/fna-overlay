@@ -11,16 +11,16 @@ USES=				 mono
 
 RUN_DEPENDS=         oksh:shells/oksh \
                      ${LOCALBASE}/share/FNA/FNA.dll:games/fna \
-					 ${LOCALBASE}/lib/steamworks-nosteam/Steamworks.NET.dll:games/steamworks-nosteam
+                     ${LOCALBASE}/lib/steamworks-nosteam/Steamworks.NET.dll:games/steamworks-nosteam
 
 LIB_DEPENDS=         libFAudio.so:audio/faudio \
                      libogg.so:audio/libogg \
                      libvorbis.so:audio/libvorbis \
-					 libFNA3D.so:graphics/fna3d \
-					 libmojoshader.so:graphics/mojoshader \
-					 libtheora.so:multimedia/libtheora \
-					 libtheorafile.so:multimedia/libtheorafile \
-					 libstubborn.so:misc/libstubborn
+                     libFNA3D.so:graphics/fna3d \
+                     libmojoshader.so:graphics/mojoshader \
+                     libtheora.so:multimedia/libtheora \
+                     libtheorafile.so:multimedia/libtheorafile \
+                     libstubborn.so:misc/libstubborn
 
 MAKE_ARGS=           "DESTDIR=${STAGEDIR}"
 
