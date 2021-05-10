@@ -1,0 +1,28 @@
+--- TShockAPI/TShockAPI.csproj.orig	2021-04-22 03:22:11 UTC
++++ TShockAPI/TShockAPI.csproj
+@@ -25,7 +25,8 @@
+     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+     <UseApplicationTrust>false</UseApplicationTrust>
+     <BootstrapperEnabled>true</BootstrapperEnabled>
+-    <TargetFrameworkProfile />
++    <TargetFrameworkProfile />
++    <LangVersion>latest</LangVersion>
+   </PropertyGroup>
+   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+     <DebugSymbols>true</DebugSymbols>
+@@ -72,7 +73,7 @@
+     </Reference>
+     <Reference Include="OTAPI">
+       <SpecificVersion>False</SpecificVersion>
+-      <HintPath Condition="Exists('..\TerrariaServerAPI\TerrariaServerAPI\bin\$(ConfigurationName)\OTAPI.dll')">..\TerrariaServerAPI\TerrariaServerAPI\bin\$(ConfigurationName)\OTAPI.dll</HintPath>
++      <HintPath>..\TerrariaServerAPI\TerrariaServerAPI\bin\$(Configuration)\OTAPI.dll</HintPath>
+     </Reference>
+     <Reference Include="System" />
+     <Reference Include="System.Data" />
+@@ -239,4 +240,4 @@
+   <Target Name="AfterBuild">
+   </Target>
+   -->
+-</Project>
+\ No newline at end of file
++</Project>
