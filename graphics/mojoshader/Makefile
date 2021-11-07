@@ -1,13 +1,16 @@
 PORTNAME=        mojoshader
-PORTVERSION=     1321         # changeset
+# Previously this was a changeset value, but i believe the source has 
+# been moved to github. there is no version right now so im just going to 
+# bump the revision number for now
+PORTVERSION=     1328         
 CATEGORIES=      graphics
 MAINTAINER=      jwmaag@gmail.com
 LICENSE=         ZLIB
 
 USE_GITHUB=      yes
-GH_ACCOUNT=      FNA-XNA
-GH_PROJECT=      MojoShader
-GH_TAGNAME=      c9037d90
+GH_ACCOUNT=      icculus
+GH_PROJECT=      mojoshader
+GH_TAGNAME=      7d5cc1c
 
 BUILD_DEPENDS=   re2c:devel/re2c \
 	${LOCALBASE}/include/vulkan/vulkan.h:graphics/vulkan-headers

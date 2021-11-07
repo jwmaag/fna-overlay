@@ -1,12 +1,12 @@
 PORTNAME=        fna3d
-DISTVERSION=     21.05
+DISTVERSION=     21.11
 CATEGORIES=      graphics
 LICENSE=         ZLIB
 
 USE_GITHUB=      yes
 GH_ACCOUNT=      FNA-XNA
 GH_PROJECT=      FNA3D
-GH_TUPLE=        FNA-XNA:MojoShader:c9037d90:MojoShader/MojoShader
+GH_TUPLE=        icculus:mojoshader:7d5cc1c:mojoshader/MojoShader
 
 USES=            cmake sdl
 USE_SDL=         sdl2
