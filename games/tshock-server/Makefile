@@ -1,6 +1,6 @@
 PORTNAME=             tshock-server
 DISTVERSIONPREFIX=    v
-DISTVERSION=          4.5.5
+DISTVERSION=          4.5.6
 
 CATEGORIES=     games
 MAINTAINER=     jwmaag@gmail.com
@@ -16,7 +16,7 @@ NUGET_DEPENDS=	BCrypt.Net=0.1.0 \
   Mono.Cecil=0.9.6.4 \
   NDesk.Options=0.2.1 \
   NuGet.Core=2.14.0 \
-  OTAPI=2.0.0.43 \
+  OTAPI=2.0.0.45 \
   OTAPI.Patcher=2.0.0.41
 
 USES=           mono:nuget
@@ -25,7 +25,7 @@ USE_GITHUB=     yes
 GH_ACCOUNT=     pryaxis
 GH_PROJECT=     TShock
 
-GH_TUPLE=       Pryaxis:TSAPI:8c2c087:TSAPI/TerrariaServerAPI
+GH_TUPLE=       Pryaxis:TSAPI:302d9b7:TSAPI/TerrariaServerAPI
 
 
 post-extract:
